@@ -66,7 +66,6 @@ export const ForumProvider = ({ children }) => {
         ),
       },
     }));
-    toast.success("Post bookmarked!");
   };
 
   const sortByDateCreated = () => {

@@ -5,8 +5,14 @@
   padding: 1rem;
 }
 
-.sorting-options{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.sorting-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sorting-options button {
+  border: none;
+  background-color: transparent;
+  color: var(--primary-color);
 }
