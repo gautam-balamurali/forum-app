@@ -19,6 +19,10 @@ li {
   font-size: 1.5rem;
 }
 
+.active{
+    font-weight: 600;
+}
+
 .current-user-details {
   display: flex;
   align-items: center;

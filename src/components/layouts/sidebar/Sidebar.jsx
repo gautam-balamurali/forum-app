@@ -3,14 +3,16 @@ import { BsBookmark, BsRocketFill } from "react-icons/bs";
 
 import "./Sidebar.css";
 import { useForum } from "../../../core/contexts/ForumContext";
+import { useLocation } from "react-router-dom";
 
 const Sidebar = () => {
   const { forumData } = useForum();
+  const location = useLocation();
 
   return (
     <div className="sidebar">
       <nav className="navigation">
-        <li>
+        <li className={location.pathname === "/" && "active"}>
           <FaHome /> Home
         </li>
         <li>
