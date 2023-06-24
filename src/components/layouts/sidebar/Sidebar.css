@@ -1,5 +1,8 @@
 .sidebar {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -10,5 +13,32 @@
 }
 
 li {
-  display: block;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.active{
+    font-weight: 600;
+}
+
+.current-user-details {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--light-shade-color);
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+
+.current-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.current-user-info h4 {
+  color: var(--dark-shade-color);
+  letter-spacing: 0.05em;
+  font-size: 1rem;
 }
