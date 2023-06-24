@@ -9,8 +9,8 @@ const Sortbar = () => {
     <div className="sort-page">
       <h2>Sort By</h2>
       <div className="sorting-options">
-        <button onClick={sortByDateCreated}>Sort by Date Created</button>
-        <button onClick={sortByUpvotes}>Sort by Upvotes</button>
+        <button onClick={sortByDateCreated}>Latest</button>
+        <button onClick={sortByUpvotes}>Upvotes</button>
       </div>
     </div>
   );

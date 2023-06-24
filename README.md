@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# 🧱Forum App🧱
+
+- A simple forum app UI containing some basic features.
+
+## Tech Stack
+
+- React
+- Netlify
+
+## Preview
+
+- [View Live](https://forum-app-gautam-balamurali.netlify.app/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
