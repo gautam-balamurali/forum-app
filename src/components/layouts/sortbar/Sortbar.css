@@ -1,0 +1,11 @@
+.sort-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sorting-options{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

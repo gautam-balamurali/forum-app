@@ -69,6 +69,38 @@ export const ForumProvider = ({ children }) => {
     toast.success("Post bookmarked!");
   };
 
+  const sortByDateCreated = () => {
+    setForumDataDetails((prev) => {
+      const sortedPosts = [...prev.forumData.posts].sort((a, b) => {
+        return new Date(b.createdAt) - new Date(a.createdAt);
+      });
+
+      return {
+        ...prev,
+        forumData: {
+          ...prev.forumData,
+          posts: sortedPosts,
+        },
+      };
+    });
+  };
+
+  const sortByUpvotes = () => {
+    setForumDataDetails((prev) => {
+      const sortedPosts = [...prev.forumData.posts].sort((a, b) => {
+        return b.upvotes - a.upvotes;
+      });
+
+      return {
+        ...prev,
+        forumData: {
+          ...prev.forumData,
+          posts: sortedPosts,
+        },
+      };
+    });
+  };
+
   return (
     <ForumContext.Provider
       value={{
@@ -76,6 +108,8 @@ export const ForumProvider = ({ children }) => {
         handleUpvote,
         handleDownvote,
         handleBookmark,
+        sortByDateCreated,
+        sortByUpvotes,
       }}
     >
       {children}
