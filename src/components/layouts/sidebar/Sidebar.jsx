@@ -28,12 +28,12 @@ const Sidebar = () => {
       <div className="current-user-details">
         <img
           className="user-comment-avatar"
-          src={forumData.picUrl}
-          alt={forumData.username}
+          src={forumData?.picUrl}
+          alt={forumData?.username}
         />
         <div className="current-user-info">
-          <h4>{forumData.name}</h4>
-          <p>@{forumData.username}</p>
+          <h4>{forumData?.name}</h4>
+          <p>@{forumData?.username}</p>
         </div>
       </div>
     </div>
