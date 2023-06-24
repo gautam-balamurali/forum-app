@@ -1,0 +1,14 @@
+.sidebar {
+  padding: 1rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+li {
+  display: block;
+}
