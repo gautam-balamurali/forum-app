@@ -1,0 +1,25 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.61);
+  color: var(--primary-color);
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+  position: sticky;
+  z-index: 2000;
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
